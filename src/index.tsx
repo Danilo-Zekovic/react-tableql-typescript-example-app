@@ -4,13 +4,12 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import ApolloClient from "apollo-boost";
-import { ApolloProvider } from "react-apollo";
+import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client'
 
 const client = new ApolloClient({
-  uri: "https://swapi.graph.cool"
+  uri: "https://swapi.graph.cool",
+  cache: new InMemoryCache()
 })
-
 
 ReactDOM.render(
   <React.StrictMode>

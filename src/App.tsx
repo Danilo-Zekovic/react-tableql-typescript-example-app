@@ -31,15 +31,15 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Example app for <code>react-tableql</code> using TypeScript.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/Danilo-Zekovic/react-tableql"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          React-TableQL GitHub
         </a>
       </header>
       <button onClick={() => setTableToShow("DefaultTable")}>DefaultTable</button>
